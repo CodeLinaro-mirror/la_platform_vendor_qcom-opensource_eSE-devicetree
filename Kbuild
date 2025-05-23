@@ -15,6 +15,10 @@ dtbo-y += sun-v2-ese-cdp.dtbo
 dtbo-y += sun-v2-ese-qrd.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_ALOR),y)
+dtbo-y += alor-ese.dtbo
+endif
+
 ifeq ($(CONFIG_ARCH_CANOE),y)
 dtbo-y += canoe-ese.dtbo
 endif
