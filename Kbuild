@@ -23,6 +23,10 @@ ifeq ($(CONFIG_ARCH_CANOE),y)
 dtbo-y += canoe-ese.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_CHORA),y)
+dtbo-y += chora-ese.dtbo
+endif
+
 ifeq ($(CONFIG_ARCH_VIENNA),y)
 dtbo-y += vienna-ese.dtbo
 endif
